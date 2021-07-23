@@ -53,7 +53,8 @@ const AgentsProvider = (props: any) => {
 
   useEffect(() => {
     const getAllAgents = async () => {
-      let response = await fetch("http://localhost:3000/AGENTS_LIST.json");
+      // let response = await fetch("http://localhost:3000/AGENTS_LIST.json");
+      let response = await fetch("https://quizzical-stonebraker-367287.netlify.app/AGENTS_LIST.json");
       let result = await response.json();
       setAgentsList(result);
     };
